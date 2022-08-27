@@ -9,7 +9,13 @@
 
 <style>
   :root {
-		--text-gradient: linear-gradient(0deg, #3ef2c8, #0e72cf, #ec3705);
+		--text-gradient: linear-gradient(
+      0deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
 	}
 
 	h1 {
