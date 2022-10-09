@@ -27,4 +27,7 @@
     top: 0;
     width: 100vw;
   }
+  :global(body) {
+    background-color: rgb(158, 227, 250);
+  }
 </style>
