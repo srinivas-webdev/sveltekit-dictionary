@@ -1,5 +1,6 @@
 <script lang="ts">
-export let phrase: PhraseDetails;
+  import MediaSlider from "./media-slider.svelte";
+  export let phrase: PhraseDetails;
 </script>
 
 
@@ -22,14 +23,17 @@ export let phrase: PhraseDetails;
       </p>
       {#if meaning.examples}
       {#each meaning.examples as example, exampleIndex (example) }
-      <p 
-        class="pl-4 text-md font-medium"
-      > 
+      <p class="pl-4 text-md font-medium"> 
         { exampleIndex+1 }. { example }
       </p>
       {/each}
       {/if}
-      
+      {#if meaning.media?.length}
+      <MediaSlider 
+        id={'slider-'+index}
+        mediaList={meaning.media}
+      />
+      {/if}
     </section> 
     {/each}
      
