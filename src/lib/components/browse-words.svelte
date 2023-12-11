@@ -37,7 +37,7 @@
       <button 
         class={`grid place-items-center text-xl 
           font-bold rounded-md text-[#1d2a57]
-          bg-yellow-500 w-12 p-2  shadow-md
+          bg-white w-12 p-2  shadow-md
           hover:bg-[#1d2a57] hover:text-white
           ${getCustomStyles(ch)}`
         }
