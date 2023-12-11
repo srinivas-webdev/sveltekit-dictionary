@@ -1,5 +1,6 @@
 <script lang="ts">
   export let data: PhraseDetails;
+	import BrowseWords from "$lib/components/browse-words.svelte";
   import RandomWord from "$lib/components/random-word.svelte";
 </script>
 
@@ -10,4 +11,5 @@
   </p>
 </div>
 <RandomWord phrase={data}/>
+<BrowseWords />
 
