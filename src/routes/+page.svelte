@@ -12,4 +12,3 @@
 </div>
 <RandomWord phrase={data}/>
 <BrowseWords />
-
